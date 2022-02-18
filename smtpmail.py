@@ -11,7 +11,9 @@ def test_conn(sender_address, sender_password, smtp_server, smtp_server_port, st
             smtp.ehlo()
         try:
             smtp.login(sender_address, sender_password)
-        except smtplib.SMTPAuthenticationError as e:
+        except (smtplib.SMTPAuthenticationError, smtplib.SMTPNotSupportedError, smtplib.SMTPHeloError, 
+        smtplib.SMTPConnectError, smtplib.SMTPDataError, smtplib.SMTPRecipientsRefused, smtplib.SMTPSenderRefused, 
+        smtplib.SMTPResponseException, smtplib.SMTPServerDisconnected, smtplib.SMTPException) as e:
             print("Error connecting to server:\n" + str(e))
             return
     print("Connection was successful!\n")
@@ -27,8 +29,10 @@ def send_test_email(sender_address, sender_password, smtp_server, smtp_server_po
             smtp.ehlo()
         try:
             smtp.login(sender_address, sender_password)
-        except smtplib.SMTPAuthenticationError as e:
-            print("Error connecting to server:\n" + str(e))
+        except (smtplib.SMTPAuthenticationError, smtplib.SMTPNotSupportedError, smtplib.SMTPHeloError, 
+        smtplib.SMTPConnectError, smtplib.SMTPDataError, smtplib.SMTPRecipientsRefused, smtplib.SMTPSenderRefused, 
+        smtplib.SMTPResponseException, smtplib.SMTPServerDisconnected, smtplib.SMTPException) as e:
+            print("Error sending test email:\n" + str(e))
             return
         message = f'Subject: {email_subject}\n\nTest email from SMTP Testing Utility'
         smtp.sendmail(sender_address, email_recipient, message)
