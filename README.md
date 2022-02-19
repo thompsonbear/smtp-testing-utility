@@ -7,7 +7,7 @@ To use:
 
 1. Install Python - https://www.python.org/downloads/
 
-2. From the directory containing testsmtp.py run the following from terminal/powershell/command prompt:
+2. Change to the directory containing testsmtp.py run the following from terminal/powershell/command prompt:
 
   &emsp; <b>[ON Windows]</b>
   
