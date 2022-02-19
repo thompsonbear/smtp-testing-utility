@@ -9,10 +9,10 @@ Install Python - https://www.python.org/downloads/
 
 From the directory containing testsmtp.py run:
 
-  [ON Windows]
+  <b>[ON Windows]</b>
   
   python testsmtp.py
   
-  [ON mac/linux/unix]
+  <b>[ON mac/linux/unix]</b>
   
   python3 testsmtp.py
