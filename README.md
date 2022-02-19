@@ -5,14 +5,16 @@ Primarily created for testing with Microsoft Exchange Online and On-prem.
 
 To use:
 
-Install Python - https://www.python.org/downloads/
+1. Install Python - https://www.python.org/downloads/
 
-From the directory containing testsmtp.py run:
+2. From the directory containing testsmtp.py run the following from terminal/powershell/command prompt:
 
-  <b>[ON Windows]</b>
+  &emsp; <b>[ON Windows]</b>
   
-  python testsmtp.py
+  &emsp;&emsp; python testsmtp.py
   
-  <b>[ON mac/linux/unix]</b>
+  &emsp; <b>[ON mac/linux/unix]</b>
   
-  python3 testsmtp.py
+  &emsp;&emsp; python3 testsmtp.py
+  
+3. Work through the prompts to test your connection to an smtp server and send a test email if desired
