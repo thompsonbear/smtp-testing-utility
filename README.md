@@ -10,7 +10,9 @@ Install Python - https://www.python.org/downloads/
 From the directory containing testsmtp.py run:
 
   [ON Windows]
+  
   python testsmtp.py
   
   [ON mac/linux/unix]
+  
   python3 testsmtp.py
